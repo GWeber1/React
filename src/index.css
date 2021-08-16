@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #212529;
 }
 
 code {
@@ -55,6 +56,12 @@ code {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.btn-primary {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
 .btn-info {
   color: #fff;
   background-color: #0dcaf0;
@@ -95,7 +102,7 @@ code {
 .search__card,
 .card {
 
-    background-color: #fff;
+    background-color: #45454b;
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem;
     width: 50%;
@@ -120,7 +127,7 @@ code {
 
 .col-md-6 {
   flex: 0 0 auto;
-  width: 100%;
+  width: 97.5%;
   align-items: center;
 }
 
@@ -140,7 +147,8 @@ code {
 
 
 
-.list-group {
+.repo__div,
+.profile__div {
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -148,11 +156,13 @@ code {
   border-radius: 0.25rem;
 }
 
-.list-group-flush {
+.repo__flush,
+.profile__flush {
   border-radius: 0;
 }
 
-.list-group-item {
+.repo--item,
+.profile--item {
   position: relative;
   display: block;
   padding: 0.5rem 1rem;

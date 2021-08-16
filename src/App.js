@@ -42,6 +42,10 @@ class App extends Component {
           </div>
           <div className="col-md-8">
            {repos.map(repo => <Repo key={repo.name} repo={repo} />)}
+           <br/>
+           <a href={`https://github.com/${user.login}?tab=repositories`} className="btn btn-primary">
+             Ver Repositórios
+           </a>
           </div>
         </div>
       )
@@ -53,7 +57,7 @@ class App extends Component {
           <Navbar />
 
           <div className="search__div">
-            <div className="search__card">
+            <div className="search__card" style={{color: '#fff'}}>
               <h1>Pesquisar</h1>
               <input onChange={this.getUser} id="search" type="text" className="form-control" placeholder="Digite o nome de um usuário" required/>
             </div>
